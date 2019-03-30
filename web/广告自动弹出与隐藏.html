@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script>
+    $(function () {
+        setTimeout(adshow,3000);
+        setTimeout(adhide,8000);
+
+    });
+    function adshow() {
+        $("#ad").show("slow");
+
+    }
+    function adhide() {
+        $("#ad").hide("slow");
+
+    }
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery快速入门</title>
+
+</head>
+<body>
+
+<!-- 广告DIV -->
+<div id="ad" style="display: none">
+    <img style="width:100%" src="../img/adv.jpg" />
+</div>
+
+<!-- 下方正文部分 -->
+<div id="content">
+    正文部分
+</div>
+
+</body>
+</html>
